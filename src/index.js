@@ -3,9 +3,9 @@ import { benotification } from './be-notification'
 import './css'
 
 export default {
-    install: (app, setup) => {
-      const set = setup || {}
-      app.provide('benotifySetup', set)
+    install: (app, _setup) => {
+      const setup = _setup || {}
+      app.provide('benotifySetup', setup)
       app.component("be-notifications", BeNotification)
       app.provide('notify', benotification)      
     }

@@ -17,10 +17,12 @@
     }
 
     onMounted(() => {
+        /** emit events './be-notification.js' */
+        events.on("notify", add)
+        
         if (setup.position) defaultAtribute.position = setup.position
         if (setup.animation) defaultAtribute.animation = setup.animation
         if (setup.duration) defaultAtribute.duration = setup.duration
-        events.on("notify", add)
     })
 
     function generateId() {
@@ -28,6 +30,12 @@
     }
 
     function add(_notification) {
+        
+        if (typeof _notification === "string") {
+            let text = _notification
+            _notification = defaultAtribute
+            _notification.message = text
+        }
         const notification = new Object({ ...defaultAtribute, ..._notification })
         notification.id = generateId()
         notification.animation = ANIMATIONS[_notification.animation] || notification.animation
@@ -50,7 +58,7 @@
     }
 
     function remove(id) {
-        //notifications.value.splice(notifications.value.findIndex(n => n.id === id), 1)
+        notifications.value.splice(notifications.value.findIndex(n => n.id === id), 1)
     }
 
     function emitCallbackText(text, notification) {

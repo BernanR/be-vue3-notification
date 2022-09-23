@@ -27,10 +27,10 @@
     </div>
 
     <div class="text-box">
-        <h2>{{ notification.title }}</h2>
+        <h2 v-bind:innerHTML="notification.title"></h2>
         <p> 
-            <strong v-if="notification.label">{{ notification.label }}:</strong>
-            {{ notification.message}}
+            <strong v-if="notification.label">{{ notification.label }}: </strong>
+            <span v-bind:innerHTML="notification.message"></span>
         </p>
 
         <BeNotificationInput 
