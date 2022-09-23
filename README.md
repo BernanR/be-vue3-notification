@@ -1,7 +1,10 @@
-# Be-Notification
+# Be Vu3 Notification
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[![Vue 3](https://img.shields.io/badge/Vue-3-green)](https://img.shields.io/badge/Vue-3-green)
 
-## Recommended IDE Setup
+Simple, light, easy and elegant toast notifications for Vue3.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+Do you wat to try it out? Check out the [live demo](https://github.com/BernanR/be-vue3-notification/)!
+
+
+**Important!** The documentation is still under construction.
