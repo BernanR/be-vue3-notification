@@ -1,5 +1,5 @@
-.Position--top-right .animation--bounce.benotify-enter-active,
-.Position--bottom-right .animation--bounce.benotify-enter-active{
+.Position--top-right .animation--bounce.be-v-notify-enter-active,
+.Position--bottom-right .animation--bounce.be-v-notify-enter-active{
     -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
   -webkit-animation-duration: 1s;
@@ -63,8 +63,8 @@
   transform: none;
   }
 } 
-.Position--top-right .animation--bounce.benotify-leave-to ,
-.Position--bottom-right .animation--bounce.benotify-leave-to  {
+.Position--top-right .animation--bounce.be-v-notify-leave-to ,
+.Position--bottom-right .animation--bounce.be-v-notify-leave-to  {
     -webkit-animation-name: bounceOutRight;
     animation-name: bounceOutRight;
     -webkit-animation-duration: 1s;
@@ -97,8 +97,8 @@
     }
     }
 
-.Position--bottom-left .animation--bounce.benotify-enter-active,
-.Position--top-left .animation--bounce.benotify-enter-active{
+.Position--bottom-left .animation--bounce.be-v-notify-enter-active,
+.Position--top-left .animation--bounce.be-v-notify-enter-active{
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
   -webkit-animation-duration: 1s;
@@ -163,8 +163,8 @@
   }
   } 
 
-.Position--top-left .animation--bounce.benotify-leave-to,
-.Position--bottom-left .animation--bounce.benotify-leave-to {
+.Position--top-left .animation--bounce.be-v-notify-leave-to,
+.Position--bottom-left .animation--bounce.be-v-notify-leave-to {
   -webkit-animation-name: bounceOutLeft;
   animation-name: bounceOutLeft;
   -webkit-animation-duration: 1s;
@@ -197,7 +197,7 @@
   }
 } 
 
-.Position--top-center .animation--bounce.benotify-enter-active {
+.Position--top-center .animation--bounce.be-v-notify-enter-active {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
   -webkit-animation-duration: 1s;
@@ -273,7 +273,7 @@
   }
   } 
 
-  .Position--top-center .animation--bounce.benotify-leave-to {
+  .Position--top-center .animation--bounce.be-v-notify-leave-to {
     -webkit-animation-name: bounceOutUp;
     animation-name: bounceOutUp;
     -webkit-animation-duration: 1s;
@@ -315,7 +315,7 @@
   }
 
 
-.Position--bottom-center .animation--bounce.benotify-leave-to {
+.Position--bottom-center .animation--bounce.be-v-notify-leave-to {
   -webkit-animation-name: bounceOutDown;
   animation-name: bounceOutDown;
   -webkit-animation-duration: 1s;
@@ -355,7 +355,7 @@
   transform: translate3d(0, 2000px, 0);
   }
   } 
-.Position--bottom-center .animation--bounce.benotify-enter-active {
+.Position--bottom-center .animation--bounce.be-v-notify-enter-active {
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
   -webkit-animation-duration: 1s;
@@ -419,9 +419,9 @@
   transform: translate3d(0, 0, 0);
   }
   }
-/* .benotify-leave-active  */
-/* .benotify-enter-from */
+/* .be-v-notify-leave-active  */
+/* .be-v-notify-enter-from */
 /* , */
-/* .benotify-leave-to {
+/* .be-v-notify-leave-to {
     background: red;
 } */

@@ -14,17 +14,17 @@ import BeNotificationItem from './BeNotificationItem.vue'
 
 <template>
     <transition-group 
-        tag="ul" name="benotify" 
-        class="Vue-Benotify_conteiner" 
+        tag="ul" name="be-v-notify" 
+        class="Be-Vue3-notification_conteiner" 
         :class="['Position--' + position]">
         <li
             v-for="(notification, key) in notifications"           
-            class="benotify"
+            class="be-v-notify"
             style="bottom: 0;"
-            :id="'be-benotify-' + notification.id"
+            :id="'be-v-notify-' + notification.id"
             :key="notification.id"
             :class="[
-                'benotify--' +  notification.type,
+                'be-v-notify--' +  notification.type,
                 'animation--' +  notification.animation,
                 (notification.reply) ? 'input-type' : '',
                 (notification.InputFocusOn) ? 'InputFocusOn' : ''

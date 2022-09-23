@@ -14,16 +14,16 @@
 
 </script>
 <template>
-    <div class="BenotifyInput">
+    <div class="be-v-notify-input">
         <label>Reply</label>
-        <div class="benotify-input-box">
+        <div class="be-v-notify-input-box">
             <div>
                 <input type="text" v-model="text" 
                     @focus="emit('OnInputFocus', {focus: 'in', text: text})" 
                     @blur="emit('OnInputFocus', {focus: 'out', text: text})"
                     >
             </div>
-            <div class="be-notify-button--Send">
+            <div class="be-v-notify-input-button">
                 <button v-if="!spinner" type="button" @click="sendNotify">
                     <span class="ico">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">

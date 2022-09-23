@@ -37,7 +37,6 @@
             notification.duration = _notification.duration || 9000
             notification.emitCallbackText = emitCallbackText
         }
-        console.log(notification.duration)
         notification.selfRemove = runTimeoutNotify
         notifications.value.push(notification)
     }
@@ -51,7 +50,7 @@
     }
 
     function remove(id) {
-        notifications.value.splice(notifications.value.findIndex(n => n.id === id), 1)
+        //notifications.value.splice(notifications.value.findIndex(n => n.id === id), 1)
     }
 
     function emitCallbackText(text, notification) {
