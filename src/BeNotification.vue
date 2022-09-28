@@ -14,12 +14,12 @@
         animation : ANIMATIONS.BOUNCE,
         position: POSITIONS.BOTTOM_RIGHT,
         duration: 3000
-    }
+    }  
 
-    onMounted(() => {
-        /** emit events './be-notification.js' */
-        events.on("notify", add)
-        
+    /** emit events './be-notification.js' */
+    events.on("notify", add)
+
+    onMounted(() => {        
         if (setup.position) defaultAtribute.position = setup.position
         if (setup.animation) defaultAtribute.animation = setup.animation
         if (setup.duration) defaultAtribute.duration = setup.duration
@@ -30,7 +30,6 @@
     }
 
     function add(_notification) {
-        
         if (typeof _notification === "string") {
             let text = _notification
             _notification = defaultAtribute
@@ -74,5 +73,5 @@
         :notifications="notifications.filter((e) => {return e.position === POSITION} )"
         @remove="remove"
     >
-    </BeTransitionGroup>   
+    </BeTransitionGroup>
 </template>

@@ -2,22 +2,25 @@
   "name": "be-vue3-notification",
   "description": "Notifications for Vue3 made easy!",
   "author": "Bernan Ribeiro",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
+  "files": ["dist"],
   "type": "module",
-  "main": "./dist/be-vue3-notification.umd.js",
+  "main": "./dist/be-vue3-notification.umd.cjs",
   "module": "./dist/be-vue3-notification.es.js",
   "exports":{
     "." : {
       "import": "./dist/be-vue3-notification.es.js",
-      "require": "./dist/be-vue3-notification.umd.js"
+      "require": "./dist/be-vue3-notification.umd.cjs"
     },
     "./dist/style.css" : "./dist/style.css"    
   },
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite serve",
+    "release": "npm run build && npm run build:dts",
+    "test": "npm run unit",
+    "preversion": "npm run test && npm run release && git add -A dist"
   },
   "dependencies": {
     "mitt": "^3.0.0",

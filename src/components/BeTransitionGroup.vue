@@ -19,7 +19,7 @@ import BeNotificationItem from './BeNotificationItem.vue'
         :class="['Position--' + position]">
         <li
             v-for="(notification, key) in notifications"           
-            class="be-v-notify"
+            class="be-v-notify teste-class"
             style="bottom: 0;"
             :id="'be-v-notify-' + notification.id"
             :key="notification.id"
