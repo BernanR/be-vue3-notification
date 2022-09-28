@@ -8,3 +8,11 @@ Do you wat to try it out? Check out the [live demo](https://bernanr.github.io/be
 
 
 **Important!** The documentation is still under construction.
+
+ - [Installation](#installation)
+
+ ## Installation
+
+```
+$ npm install --save be-vue3-notification
+```
