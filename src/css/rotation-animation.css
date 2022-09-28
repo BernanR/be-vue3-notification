@@ -1,5 +1,5 @@
-.Position--bottom-right .animation--rotation.benotify-enter-active,
-.Position--top-right .animation--rotation.benotify-enter-active{
+.Position--bottom-right .animation--rotation.be-v-notify-enter-active,
+.Position--top-right .animation--rotation.be-v-notify-enter-active{
     -webkit-animation-name: rotateInUpRight;
     animation-name: rotateInUpRight;
     -webkit-animation-duration: 0.5s;
@@ -40,8 +40,8 @@
     opacity: 1;
     }
 }
-.Position--bottom-right .animation--rotation.benotify-leave-to,
-.Position--top-right .animation--rotation.benotify-leave-to{
+.Position--bottom-right .animation--rotation.be-v-notify-leave-to,
+.Position--top-right .animation--rotation.be-v-notify-leave-to{
     -webkit-animation-name: rotateOutDownRight;
     animation-name: rotateOutDownRight;
     -webkit-animation-duration: 0.5s;
@@ -113,8 +113,8 @@
     }
     } 
 
-.Position--bottom-left .animation--rotation.benotify-enter-active,
-.Position--top-left .animation--rotation.benotify-enter-active{
+.Position--bottom-left .animation--rotation.be-v-notify-enter-active,
+.Position--top-left .animation--rotation.be-v-notify-enter-active{
     -webkit-animation-name: rotateInDownLeft;
     animation-name: rotateInDownLeft;
     -webkit-animation-duration: 0.5s;
@@ -154,8 +154,8 @@
     opacity: 1;
     }
     } 
-.Position--bottom-left .animation--rotation.benotify-leave-to,
-.Position--top-left .animation--rotation.benotify-leave-to {
+.Position--bottom-left .animation--rotation.be-v-notify-leave-to,
+.Position--top-left .animation--rotation.be-v-notify-leave-to {
     -webkit-animation-name: rotateOutUpLeft;
     animation-name: rotateOutUpLeft;
     -webkit-animation-duration: 0.5s;
@@ -191,8 +191,8 @@
     opacity: 0;
     }
     } 
-.Position--top-center .animation--rotation.benotify-enter-active,
-.Position--bottom-center .animation--rotation.benotify-enter-active {
+.Position--top-center .animation--rotation.be-v-notify-enter-active,
+.Position--bottom-center .animation--rotation.be-v-notify-enter-active {
     -webkit-animation-name: rotateIn;
     animation-name: rotateIn;
     -webkit-animation-duration: 1s;
@@ -232,8 +232,8 @@
     opacity: 1;
     }
 } 
-.Position--top-center .animation--rotation.benotify-leave-to,
-.Position--bottom-center .animation--rotation.benotify-leave-to {
+.Position--top-center .animation--rotation.be-v-notify-leave-to,
+.Position--bottom-center .animation--rotation.be-v-notify-leave-to {
     -webkit-animation-name: rotateOut;
     animation-name: rotateOut;
     -webkit-animation-duration: 1s;
@@ -269,9 +269,9 @@
     opacity: 0;
     }
     } 
-/* .benotify-leave-active  */
-/* .benotify-enter-from */
+/* .be-v-notify-leave-active  */
+/* .be-v-notify-enter-from */
 /* , */
-/* .benotify-leave-to {
+/* .be-v-notify-leave-to {
     background: red;
 } */

@@ -1,5 +1,5 @@
-.Position--top-right .animation--slide.benotify-enter-active,
-.Position--bottom-right .animation--slide.benotify-enter-active{
+.Position--top-right .animation--slide.be-v-notify-enter-active,
+.Position--bottom-right .animation--slide.be-v-notify-enter-active{
     -webkit-animation-name: slideInRight;
     animation-name: slideInRight;
     -webkit-animation-duration: 0.7s;
@@ -29,8 +29,8 @@
     transform: translateX(0);
     }
 }
-.Position--top-right .animation--slide.benotify-leave-to,
-.Position--bottom-right .animation--slide.benotify-leave-to {
+.Position--top-right .animation--slide.be-v-notify-leave-to,
+.Position--bottom-right .animation--slide.be-v-notify-leave-to {
     -webkit-animation-name: slideOutRight;
     animation-name: slideOutRight;
     -webkit-animation-duration: 0.2s;
@@ -61,7 +61,7 @@
     }
 }
 
-.Position--top-center .animation--slide.benotify-enter-active {
+.Position--top-center .animation--slide.be-v-notify-enter-active {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
     -webkit-animation-duration: 1s;
@@ -94,8 +94,8 @@
     }
 }
 
-.Position--bottom-left .animation--slide.benotify-enter-active,
-.Position--top-left .animation--slide.benotify-enter-active {
+.Position--bottom-left .animation--slide.be-v-notify-enter-active,
+.Position--top-left .animation--slide.be-v-notify-enter-active {
     -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
     -webkit-animation-duration: 1s;
@@ -126,7 +126,7 @@
     }
 } 
 
-.Position--top-left .animation--slide.benotify-leave-to   {
+.Position--top-left .animation--slide.be-v-notify-leave-to   {
     -webkit-animation-name: slideOutLeft;
     animation-name: slideOutLeft;
     -webkit-animation-duration: 1s;
@@ -156,7 +156,7 @@
     transform: translateX(-100%);
     }
 } 
-.Position--bottom-center .animation--slide.benotify-enter-active {
+.Position--bottom-center .animation--slide.be-v-notify-enter-active {
     -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
     -webkit-animation-duration: 1s;
@@ -187,7 +187,7 @@
     }
 } 
 
-.Position--bottom-center .animation--slide.benotify-leave-to {
+.Position--bottom-center .animation--slide.be-v-notify-leave-to {
     -webkit-animation-name: slideOutDown;
     animation-name: slideOutDown;
     -webkit-animation-duration: 0.4s;
@@ -217,9 +217,9 @@
     transform: translateY(450%);
     }
 } 
-/* .benotify-leave-active  */
-/* .benotify-enter-from */
+/* .be-v-notify-leave-active  */
+/* .be-v-notify-enter-from */
 /* , */
-/* .benotify-leave-to {
+/* .be-v-notify-leave-to {
     background: red;
 } */

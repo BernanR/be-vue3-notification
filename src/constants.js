@@ -5,7 +5,7 @@ export const TYPE = {
     INFO: "info",
     DEFAULT: "default",
   }
-  
+
   export const POSITIONS = {
     TOP_LEFT: "top-left",
     TOP_CENTER: "top-center",
@@ -19,5 +19,6 @@ export const TYPE = {
     BOUNCE: "bounce",
     SLIDE: 'slide',
     FADE: 'fade',
+    ROTATION: 'rotation',
     undefined : "bounce",
   }
