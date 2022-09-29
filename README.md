@@ -1,4 +1,4 @@
-# Be Vu3 Notification
+# Be Vue3 Notification
 
 [![Vue 3](https://img.shields.io/badge/Vue-3-green)](https://img.shields.io/badge/Vue-3-green)
 
@@ -37,7 +37,7 @@ app.use(BeNotification);
 
 ### Creating notificatons
 
-To create toasts, get a *toast interface* by calling `useToast` from within a component.
+To create notifications, get inject plugin from vue, then calling it by `inject("notify")` from within a component.
 
 ```html
 <script>
@@ -55,6 +55,7 @@ To create toasts, get a *toast interface* by calling `useToast` from within a co
       position: 'bottom-right',
     })
 
+    /** one example on how calling chat notifications */
     notify({
       type: 'info',
       title : 'Gecko sent you a message.',
