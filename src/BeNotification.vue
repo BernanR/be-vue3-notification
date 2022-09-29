@@ -19,7 +19,7 @@
     /** emit events './be-notification.js' */
     events.on("notify", add)
 
-    onMounted(() => {        
+    onMounted(() => {
         if (setup.position) defaultAtribute.position = setup.position
         if (setup.animation) defaultAtribute.animation = setup.animation
         if (setup.duration) defaultAtribute.duration = setup.duration

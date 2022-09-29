@@ -3,7 +3,7 @@
   "description": "Notifications for Vue3 made easy!",
   "author": "Bernan Ribeiro",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.3",
   "files": [
     "dist"
   ],
