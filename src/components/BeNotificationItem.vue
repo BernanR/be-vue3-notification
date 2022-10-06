@@ -34,8 +34,8 @@
         </p>
 
         <BeNotificationInput 
-            v-if="notification.reply" 
-            @OnInputFocus="OnInputFocus" 
+            v-if="notification.reply"
+            @OnInputFocus="OnInputFocus"
             @emitCallbackText="text => {notification.emitCallbackText(text, notification)}"
         >
         </BeNotificationInput>

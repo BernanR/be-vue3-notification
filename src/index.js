@@ -1,6 +1,6 @@
 import BeNotification from './BeNotification.vue'
 import { benotification } from './be-notification'
-import './css'
+//import './css'
 
 export default {  
     install: (app, _setup) => {

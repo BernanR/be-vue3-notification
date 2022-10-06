@@ -1,3 +1,4 @@
+console.log("here")
 import './main.css'
 import './fade-animation.css'
 import './slide-animation.css'

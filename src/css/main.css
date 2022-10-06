@@ -58,6 +58,14 @@
   border-radius: inherit;
 }
 
+.be-v-notify.light:not(.input-type){
+  background: white!important;
+}
+
+.be-v-notify.light.input-type .text-box{
+  background: white!important;
+} 
+
 .be-v-notify{
   background-color: white;
   -webkit-box-shadow: 5px 6px 4px -1px rgba(0,0,0,0.24); 

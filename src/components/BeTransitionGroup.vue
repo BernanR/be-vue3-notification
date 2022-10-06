@@ -19,13 +19,14 @@ import BeNotificationItem from './BeNotificationItem.vue'
         :class="['Position--' + position]">
         <li
             v-for="(notification, key) in notifications"           
-            class="be-v-notify teste-class"
+            class="be-v-notify"
             style="bottom: 0;"
             :id="'be-v-notify-' + notification.id"
             :key="notification.id"
             :class="[
                 'be-v-notify--' +  notification.type,
                 'animation--' +  notification.animation,
+                (notification.light) ? 'light' : '',
                 (notification.reply) ? 'input-type' : '',
                 (notification.InputFocusOn) ? 'InputFocusOn' : ''
             ]"

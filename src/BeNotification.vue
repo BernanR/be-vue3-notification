@@ -13,6 +13,7 @@
         type : "info",
         animation : ANIMATIONS.BOUNCE,
         position: POSITIONS.BOTTOM_RIGHT,
+        light: false,
         duration: 3000
     }  
 
@@ -20,9 +21,10 @@
     events.on("notify", add)
 
     onMounted(() => {
-        if (setup.position) defaultAtribute.position = setup.position
-        if (setup.animation) defaultAtribute.animation = setup.animation
-        if (setup.duration) defaultAtribute.duration = setup.duration
+        if ('position' in setup) defaultAtribute.position = setup.position
+        if ('animation' in setup) defaultAtribute.animation = setup.animation
+        if ('duration' in setup) defaultAtribute.duration = setup.duration
+        if ('light' in setup) defaultAtribute.light = setup.light
     })
 
     function generateId() {
@@ -35,6 +37,7 @@
             _notification = defaultAtribute
             _notification.message = text
         }
+
         const notification = new Object({ ...defaultAtribute, ..._notification })
         notification.id = generateId()
         notification.animation = ANIMATIONS[_notification.animation] || notification.animation
@@ -44,6 +47,7 @@
             notification.duration = _notification.duration || 9000
             notification.emitCallbackText = emitCallbackText
         }
+
         notification.selfRemove = runTimeoutNotify
         notifications.value.push(notification)
     }
@@ -57,7 +61,7 @@
     }
 
     function remove(id) {
-        notifications.value.splice(notifications.value.findIndex(n => n.id === id), 1)
+       notifications.value.splice(notifications.value.findIndex(n => n.id === id), 1)
     }
 
     function emitCallbackText(text, notification) {
