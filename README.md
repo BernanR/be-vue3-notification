@@ -12,7 +12,7 @@ For check it out, just click --> Check out the [live demo](https://bernanr.githu
 - [Usage](#usage)
   - [Plugin registration](#plugin-registration)
   - [Creating notifications](#creating-notifications)
-  - [Positioning the notifications](#positioning-the-notifications)
+  - [Positions](#positions)
   - [Animations](#animations)
 
 ## Installation
@@ -38,7 +38,7 @@ const app = createApp(...);
 app.use(BeNotification);
 ```
 
-### Creating notificatons
+### Creating notifications
 
 To create notifications, get inject plugin from vue, then calling it by `inject("notify")` from within a component.
 
@@ -90,7 +90,7 @@ Then, to create notifications you can use the example below or [Click here](http
 </script>
 ```
 
-### Positioning the notificaions
+### Positions
 
 The notificaions will be displayed at the bottom right by default, but you can 
 change it manually setting the `position` option.
