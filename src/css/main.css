@@ -12,6 +12,7 @@
   position: fixed;
   width: 400px;
   padding: 0;
+  z-index: 9999999;
 }
 .Be-Vue3-notification_conteiner.Position--bottom-right{ 
   bottom: 0 ;
@@ -82,7 +83,7 @@
   margin-bottom: 1rem;
   transform: translateZ(0);
   overflow: hidden;
-  padding: 0; 
+  padding: 0;   
 }
 .be-v-notify.input-type{
   align-items: center;
