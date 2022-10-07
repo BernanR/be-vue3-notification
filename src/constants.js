@@ -19,6 +19,5 @@ export const TYPE = {
     BOUNCE: "bounce",
     SLIDE: 'slide',
     FADE: 'fade',
-    ROTATION: 'rotation',
-    undefined : "bounce",
+    ROTATION: 'rotation'
   }

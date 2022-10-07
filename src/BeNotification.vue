@@ -32,12 +32,6 @@
     }
 
     function add(_notification) {
-        if (typeof _notification === "string") {
-            let text = _notification
-            _notification = defaultAtribute
-            _notification.message = text
-        }
-
         const notification = new Object({ ...defaultAtribute, ..._notification })
         notification.id = generateId()
         notification.animation = ANIMATIONS[_notification.animation] || notification.animation
