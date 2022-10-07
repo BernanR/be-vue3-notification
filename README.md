@@ -50,7 +50,7 @@ Also, you will need import `inject` method from vue, like:
 ```html
 import { inject } from 'vue';
 ```
-Then you can create notifications by calling `inject("notify")` from within a component. Check the complete example on code bellow, also you can check it out other examples on how you can call a different type of notification [Clicking here](https://bernanr.github.io/be-vue3-notification/)! 
+Then you can create notifications by calling `inject("notify")` from within a component. Check the complete example on code bellow, also you can check it out others examples on how you can call a different type of notification [Clicking here](https://bernanr.github.io/be-vue3-notification/)! 
 
 ```html
 
@@ -125,9 +125,9 @@ notify("Hello Gecko!", { position: POSITION.BOTTOM_LEFT });
 ### Animations
 
 bounce animate is been setup by default but you can change it, follow the list of all animations:
-**bounce**
-**slide**
-**fade**
+**bounce**,
+**slide**,
+**fade**,
 **rotation**
 
 ```javascript
