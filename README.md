@@ -42,7 +42,7 @@ app.use(BeNotification);
 
 To create notifications, get inject plugin from vue, then calling it by `inject("notify")` from within a component.
 
-First of all, put the following tag in your main component, usually in App.vue
+Now put the following tag in your main component, usually in App.vue
 
 ```html
 <be-notifications/>
