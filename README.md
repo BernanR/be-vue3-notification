@@ -124,7 +124,7 @@ notify("Hello Gecko!", { position: POSITION.BOTTOM_LEFT });
 
 ### Animations
 
-bounce animate is been setup by default but you can change it, follow the list of all animations:
+bounce animate is been setup by default, but you can change it. Follow the list of all animations:
 **bounce**,
 **slide**,
 **fade**,
