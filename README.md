@@ -6,7 +6,7 @@ Simple, light, easy and elegant toast notifications for Vue3, in other words, fo
 
 For check it out, just click --> Check out the [live demo](https://bernanr.github.io/be-vue3-notification/)!
 
-**Important!** The documentation is still under construction.
+**Important!** The documentation is still under construction and will be improved, but here you have everything to get start.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -40,14 +40,17 @@ app.use(BeNotification);
 
 ### Creating notifications
 
-To create notifications, get inject plugin from vue, then calling it by `inject("notify")` from within a component.
-
-Now put the following tag in your main component, usually in App.vue
+To create notifications, you will need put the following tag in your main component, usually in App.vue
 
 ```html
 <be-notifications/>
 ```
-Then, to create notifications you can use the example below or [Click here](https://bernanr.github.io/be-vue3-notification/)! to check it out more examples.
+Also, you will need import `inject` method from vue, like: 
+
+```html
+import { inject } from 'vue';
+```
+Then you can create notifications by calling `inject("notify")` from within a component. Check the complete example on code bellow, also you can check it out other examples on how you can call a different type of notification [Clicking here](https://bernanr.github.io/be-vue3-notification/)! 
 
 ```html
 
@@ -57,7 +60,8 @@ Then, to create notifications you can use the example below or [Click here](http
     const notify = inject("notify")
 
     notify("Hello World!")
-
+  
+    /** Success example **/
     notify({
       type: 'success',
       title : 'Congratulations!&#128526;',
@@ -92,8 +96,7 @@ Then, to create notifications you can use the example below or [Click here](http
 
 ### Positions
 
-The notificaions will be displayed at the bottom right by default, but you can 
-change it manually setting the `position` option.
+The notifications will be displayed at the bottom right by default, but you can change it manually setting the `position` option.
 
 Folow the list of all position that you can use:
 **top-left**,
@@ -113,7 +116,7 @@ app.use(BeNotification, {
     position: POSITION.BOTTOM_LEFT
 });
 
-// Also you can set it directly on calling function.
+// Also you can set it directly on calling of function.
 import {POSITION} from 'be-vue3-notification'
 
 notify("Hello Gecko!", { position: POSITION.BOTTOM_LEFT });
