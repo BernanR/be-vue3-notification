@@ -113,6 +113,8 @@ app.use(BeNotification, {
     position: POSITION.BOTTOM_LEFT
 });
 
+import {POSITION} from 'be-vue3-notification'
+
 // Also you can set it directly on calling function.
 notify("Hello Gecko!", { position: POSITION.BOTTOM_LEFT });
 ```
