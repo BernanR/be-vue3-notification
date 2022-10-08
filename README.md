@@ -134,7 +134,7 @@ bounce animate is been setup by default, but you can change it. Follow the list 
 import BeNotification, {ANIMATION} from 'be-vue3-notification'
 
 app.use(BeNotification, {
-  transition: ANIMATION.BOUNCE,
+  animation: ANIMATION.BOUNCE,
 });
 ```
 
