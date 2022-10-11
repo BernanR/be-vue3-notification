@@ -4,7 +4,7 @@
 
 Simple, light, easy and elegant toast notifications for Vue3, in other words, for exact you'll need in real world.
 
-For check it out, just click --> Check out the [live demo](https://bernanr.github.io/be-vue3-notification/)!
+To check it out, just click --> Check out the [live demo](https://bernanr.github.io/be-vue3-notification/)!
 
 **Important!** The documentation is still under construction and will be improved, but here you have everything to get start.
 
@@ -134,7 +134,7 @@ bounce animate is been setup by default, but you can change it. Follow the list 
 import BeNotification, {ANIMATION} from 'be-vue3-notification'
 
 app.use(BeNotification, {
-  transition: ANIMATION.BOUNCE,
+  animation: ANIMATION.BOUNCE,
 });
 ```
 
